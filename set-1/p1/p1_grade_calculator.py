@@ -3,9 +3,10 @@
 # P1
 # 11/27/2026
 
+grades = []
+
 # Accept Student's Grades
-def grade():
-    grades = []
+def enter_grade():
 
     # Prompt hpw many grade to input?
     while True:
@@ -21,9 +22,9 @@ def grade():
             print("Invalid Input. Enter a whole number")
 
 # to test  if the input number of grades works
-# return number
-# count = grades()
-# print(count)
+#     return number
+# test =  enter_grade()
+# print(test)
 
     # lets loop
     for i in range(number):
@@ -36,23 +37,22 @@ def grade():
                     grades.append(grade)
                     break
                 else:
-                    print("Grade must be atleast 0 to 1000")
+                    print("Grade must be atleast 0 to 100")
                         
             except ValueError:
                 print("Invalid Input. Enter a number")
 
     return grades
 
-# to test  if the input grade works
-# result = grade()
+# # to test  if the input grade works
+# result = enter_grade()
 # print(result)
 
-#calculate average
-def average(grades):
-    return sum(grades) / len(grades)
+# #calculate average
+def average(grade_list):
+    return sum(grade_list) / len(grade_list)
 
 # test the average is right
-# test = grade()
-# result = average(test)
+# grades = enter_grade()
+# result = average(grades)
 # print (result)
-
